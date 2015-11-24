@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-sass',       '3.2.0.0'
+
 gem 'rails',        '4.2.2'
 gem 'sass-rails',   '5.0.2'
 gem 'uglifier',     '2.5.3'
@@ -20,6 +22,12 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
+end
+
+group :test do
+  gem 'minitest-reporters', '1.0.5'
+  gem 'mini_backtrace',     '0.1.3'
+  gem 'guard-minitest',     '2.3.1'
 end
 
 group :production do
